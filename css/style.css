@@ -1,0 +1,101 @@
+html{
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.content {
+    background: white; 
+    max-width: 1100px;
+    margin:  30px auto;
+    height: 100%;
+    padding: 20px;
+}
+
+@media (min-width:768px) {
+    .container {
+        display: flex;
+    }
+    .container > div {
+        flex: 1 0 50%;
+    }
+}
+
+#seeker-form p {
+    text-align: center;
+}
+
+#seeker-form span {
+    color: red;
+}
+
+.input {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.input label {
+    flex: 0 0 120px;
+    text-align: right;
+    margin-right: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.input span {
+    color: red;
+}
+.input input[type="text"] {
+    height: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    flex: 1;
+}
+.send {
+    text-align: right;
+    justify-content: flex-end!important;
+}
+.input input[type="submit"]{
+    background: rgb(43, 196, 235); 
+    padding: .5rem 2rem;
+    color: white;
+    align-self: flex-end;
+    border:none;
+    transition: background-color .3s ease-in-out;
+} 
+.input input[type="submit"]:hover {
+    cursor: pointer;
+    background:rgb(3, 120, 150); 
+}
+
+.error {
+    padding: 1rem;
+    border: 1px solid red;
+    background-color: rgb(249, 121, 121);
+    color: white;
+}
+
+
+#results{
+    white-space: pre-wrap;
+    padding: 2rem;
+}
