@@ -26,7 +26,7 @@
 
 ## See it online
 
-- [`netlify`](https://songlyrics.netlify.com)
+- [`netlify`](https://songslyrics.netlify.com)
 - [`codepen`](https://codepen.io/LeonAGA/pen/gOYJPem)
 
 ## Links to other proyects
