@@ -2,6 +2,7 @@ import * as UI from './interfaz.js';
 import {API} from './api.js';
 
 UI.seekerForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
 
     //Obtainig data from the form.
     const artist = document.querySelector('#artist').value;
